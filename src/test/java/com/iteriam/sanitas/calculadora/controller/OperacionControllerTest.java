@@ -15,7 +15,7 @@ import com.iteriam.sanitas.calculadora.model.Operador;
 class OperacionControllerTest {
     
     @Autowired
-    private OperacionCotrollerImpl operacionCotrollerImpl;
+    private OperacionControllerImpl operacionCotrollerImpl;
 
     @Test
     void operacionCotrollerImplTest() {
