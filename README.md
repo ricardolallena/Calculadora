@@ -11,6 +11,15 @@ Test unitario para asegurar la calidad del codigo.
 
 Para añadir nuevas operaciones en el futuro de forma agil, se realiza un diseño modular implementando una clase por cada operacion.
 
+## Agregar nueva operación
+
+Para agregar una nueva operacion hay seguir los siguientes pasos:
+
+1. Crear una clase q implemente Operacion.
+2. Esta clase debe tener el siguiente formato de nombre: **Operacion + Nuevo Operador**
+   - Ejemplo: **Operacion + Multiplicacion = OperacionMultiplicacion**
+3. Agregar el nuevo operador **"Multiplicacion"** al enum Operador.
+
 ## Tecnologías
 
 * Spring Boot 3.0.2
