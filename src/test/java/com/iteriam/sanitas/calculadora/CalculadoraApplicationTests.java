@@ -13,6 +13,7 @@ class CalculadoraApplicationTests {
 	 */
 	@Test
 	void contextLoads(ApplicationContext context) {
+		CalculadoraApplication.main(new String[] {});
 		Assertions.assertNotNull(context, "Error al cargar el conexto de spring boot");
 	}
 
