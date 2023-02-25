@@ -20,6 +20,9 @@ class TracerTest {
     @Autowired
     private Tracer tracer;
 
+    @Autowired
+    private OperacionSuma operacionSuma;
+
     /**
      * Test tracer String normal
      */
@@ -33,8 +36,9 @@ class TracerTest {
      */
     @Test
     void tracerTracerOperacionTest() {
+        this.operacionSuma.setParametros("8", Operador.SUMA, "6.2");
         Assertions.assertTrue(tracer.trace(
-                new TraceOperacion(new Resultado(new BigDecimal("3.6")), new OperacionSuma("8", Operador.SUMA, "6.2"))),
+                new TraceOperacion(new Resultado(new BigDecimal("3.6")), this.operacionSuma)),
                 "Error trace");
     }
 
