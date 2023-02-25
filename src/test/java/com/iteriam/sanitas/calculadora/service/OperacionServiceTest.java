@@ -42,8 +42,7 @@ class OperacionServiceTest {
         IllegalArgumentException thrown = Assertions.assertThrows(IllegalArgumentException.class, () -> {
             operacionServiceImpl.execute("1", null, "2");
         });
-
-        Assertions.assertEquals( "operador incorrecto." ,thrown.getMessage());
+        Assertions.assertEquals("operador incorrecto.", thrown.getMessage());
     }
 
 }
