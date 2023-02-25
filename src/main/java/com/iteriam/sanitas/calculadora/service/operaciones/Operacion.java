@@ -1,5 +1,6 @@
 package com.iteriam.sanitas.calculadora.service.operaciones;
 
+import com.iteriam.sanitas.calculadora.model.Operador;
 import com.iteriam.sanitas.calculadora.model.Resultado;
 
 /**
@@ -8,6 +9,8 @@ import com.iteriam.sanitas.calculadora.model.Resultado;
  */
 public interface Operacion {
 
-    Resultado getReultado();
+    Resultado getResultado();
+
+    void setParametros(String num1, Operador operador, String num2);
 
 }
